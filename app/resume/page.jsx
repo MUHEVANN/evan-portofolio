@@ -40,7 +40,12 @@ const about = {
     },
     {
       fieldName: "Email",
-      FieldValue: "muhammadevankusyanto@gmail.com",
+      FieldValue: (
+        <div className="break-words flex flex-col sm:flex-row">
+          <span>muhammadevankusyanto</span>
+          <span>@gmail.com</span>
+        </div>
+      ),
     },
   ],
 };

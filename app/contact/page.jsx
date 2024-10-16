@@ -21,7 +21,12 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "email",
-    desc: "muhammadevankusyanto@gmail.com",
+    desc: (
+      <div className="break-words flex flex-col sm:flex-row">
+        <span>muhammadevankusyanto</span>
+        <span>@gmail.com</span>
+      </div>
+    ),
   },
   {
     icon: <FaMapMarkerAlt />,
@@ -43,9 +48,9 @@ function Contact() {
               <h3>Let&apos;s Work Together</h3>
               <p className="text-white/60">
                 Feel free to reach out if you have any questions, project ideas,
-                or collaboration opportunities. I&apos;m always open to connecting
-                and exploring new possibilities. Let&apos;s create something amazing
-                together!
+                or collaboration opportunities. I&apos;m always open to
+                connecting and exploring new possibilities. Let&apos;s create
+                something amazing together!
               </p>
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                 <Input placeholder="Firstname" />
