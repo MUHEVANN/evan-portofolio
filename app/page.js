@@ -13,7 +13,7 @@ export default function Home() {
           <div className="lg:order-none order-2">
             <span>Software Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'am <br />
+              Hello I&apos;am <br />
               <span className="text-accent">Muhammad Evan</span>
             </h1>
             <p className="w-full lg:max-w-[500px] mb-9">

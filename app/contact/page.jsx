@@ -40,11 +40,11 @@ function Contact() {
               action=""
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
             >
-              <h3>Let's Work Together</h3>
+              <h3>Let&apos;s Work Together</h3>
               <p className="text-white/60">
                 Feel free to reach out if you have any questions, project ideas,
-                or collaboration opportunities. I'm always open to connecting
-                and exploring new possibilities. Let's create something amazing
+                or collaboration opportunities. I&apos;m always open to connecting
+                and exploring new possibilities. Let&apos;s create something amazing
                 together!
               </p>
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
