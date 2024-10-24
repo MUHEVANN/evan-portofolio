@@ -16,25 +16,48 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "X Gaming",
-    description: "Project yang berisi web tentang informasi gaming",
-    stack: [{ name: "HTML 5" }, { name: "Tailwind CSS" }, { name: "Javascript" }],
-    image: "/work/porto1.png",
-    live: "",
-    github: "",
+    title: "Creacy",
+    description: "Project yang dibangun menggunakan next js",
+    stack: [
+      { name: "HTML 5" },
+      { name: "Tailwind CSS" },
+      { name: "Javascript" },
+      { name: "Next JS" },
+    ],
+    image: "/work/creacy.png",
+    live: "https://creacy.vercel.app/",
+    github: "https://github.com/MUHEVANN/creacy",
   },
   {
     num: "02",
     category: "frontend",
-    title: "X Watch",
-    description: "Project Jam Tangan Website",
-    stack: [{ name: "HTML 5" }, { name: "Tailwind CSS" }, { name: "Javascript" }],
-    image: "/work/porto2.jpg",
-    live: "",
-    github: "",
+    title: "X Gaming",
+    description: "Project yang berisi web tentang informasi gaming",
+    stack: [
+      { name: "HTML 5" },
+      { name: "Tailwind CSS" },
+      { name: "Javascript" },
+    ],
+    image: "/work/porto1.png",
+    live: "https://xgames-mu.vercel.app/",
+    github: "https://github.com/MUHEVANN/xgames",
   },
   {
     num: "03",
+    category: "frontend",
+    title: "X Watch",
+    description: "Project Jam Tangan Website",
+    stack: [
+      { name: "HTML 5" },
+      { name: "Tailwind CSS" },
+      { name: "Javascript" },
+    ],
+    image: "/work/porto2.jpg",
+    live: "https://x-watch-muhevanns-projects.vercel.app/",
+    github: "https://github.com/MUHEVANN/x-watch",
+  },
+  {
+    num: "04",
     category: "fullstack",
     title: "Project 3",
     description: "This is a project description",
@@ -80,7 +103,7 @@ function Work() {
               <div className="border border-white/20"></div>
 
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="h-[70px] w-[70px] rounded-full bg-white/5 flex items-center justify-center group">
@@ -92,7 +115,7 @@ function Work() {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="h-[70px] w-[70px] rounded-full bg-white/5 flex items-center justify-center group">
@@ -116,13 +139,13 @@ function Work() {
             >
               {projects.map((item, i) => (
                 <SwiperSlide key={i} className="w-full">
-                  <div className="h-[465px] relative group flex justify-center items-center bg-pink-50/20">
+                  <div className="h-[465px] relative group flex justify-center items-center ">
                     <div></div>
                     <div className="relative w-full h-full">
                       <Image
                         src={item.image}
                         fill
-                        className="object-cover "
+                        className="object-cover md:object-contain "
                         alt=""
                       />
                     </div>
