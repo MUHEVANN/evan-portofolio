@@ -22,12 +22,14 @@ export default function Home() {
               include Laravel, React, and Vue.js
             </p>
             <div className="flex flex-col md:flex-row items-center  gap-8">
-              <Button
-                className="uppercase flex gap-2 items-center tracking-[2px]"
-                variant="outline"
-              >
-                <span>Download CV</span> <FiDownload />
-              </Button>
+              <a href="/MuhammadEvanKusyantoCV.pdf" download>
+                <Button
+                  className="uppercase flex gap-2 items-center tracking-[2px]"
+                  variant="outline"
+                >
+                  <span>Download CV</span> <FiDownload />
+                </Button>
+              </a>
 
               <div>
                 <Social outline />
